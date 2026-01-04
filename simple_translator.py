@@ -8,7 +8,8 @@ from google.genai import types
 # ---------------------------------------------------------
 # Get from environment variables or define directly
 API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyBDgtO02wioWIF0FBxvFglZiHkWA2tqlKk")
-MODEL_ID = "gemini-3-flash-preview"
+#MODEL_ID = "gemini-3-flash-preview"
+MODEL_ID = "gemini-2.5-flash-lite"
 
 # ---------------------------------------------------------
 # Client Initialization
