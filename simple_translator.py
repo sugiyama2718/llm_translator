@@ -46,15 +46,6 @@ def translate_ja_to_en(text: str) -> str:
 # Execution Test
 # ---------------------------------------------------------
 if __name__ == "__main__":
-    # Warmup (first call might be slow due to connection establishment etc.)
-    print("Warming up...")
-    try:
-        translate_ja_to_en("テスト")
-        print("Ready.\n")
-    except Exception as e:
-        print(f"Error during warmup: {e}")
-        exit(1)
-
     while True:
         user_input = input("Enter Japanese text (q to quit): ")
         if user_input.lower() == 'q':
