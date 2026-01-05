@@ -19,7 +19,8 @@ except ImportError:
 
 class TranslatorApp(ctk.CTk):
     def __init__(self):
-        super().__init__()
+        # Set WM_CLASS via className argument for correct dock grouping
+        super().__init__(className="llm-translator")
 
         # Window Setup
         self.title("AI Translator (JP -> EN)")
